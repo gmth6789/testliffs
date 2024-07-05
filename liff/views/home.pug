@@ -1,0 +1,28 @@
+extends ./layout
+
+block content
+  h1.text-center.mb-5 LINE Front-end Framework Manager
+
+  .card.mt-4
+    .card-body
+      h4 Description
+      p.
+        <a href="https://developers.line.biz/en/docs/liff/overview">LIFF (LINE Front-end Framework)</a> Manager is an unofficial tool to manage your LIFF
+        apps. This application is made by <a href="https://www.line-community.me/contributors/detail?apiId=0037F00000ZnJvgQAF">M Gilang Januar</a> (a LINE
+        API Expert from Indonesia).  As this is an open-source project with <a href="https://github.com/mgilangjanuar/liff-manager/blob/master/LICENSE.md">MIT license</a>, you can contribute by forking this
+        <a href="https://github.com/mgilangjanuar/liff-manager">repository</a> and creating a pull request. We don't use any database or remote storage; all your
+        credentials are stored in cookies so it's safe and can't be taken by anyone.
+      p.text-center.mb-0.mt-4
+        img.img-fluid(src="/9ac.jpg", style="width:400px")
+      
+  .card.mt-4
+    .card-body
+      h4 Changelog
+      p.mb-0: strong v1.0
+      ul.mb-0
+        li Initial release
+
+  unless _channel
+    .mt-5.text-center
+      a.btn.btn-outline-dark.mr-2(href="https://github.com/mgilangjanuar/liff-manager") Fork on GitHub
+      a.btn.btn-success.ml-2(href="/register") Try Now!

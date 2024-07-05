@@ -1,0 +1,7 @@
+node_modules
+testing
+.jshint
+npm-debug.log
+index-cov.js
+.DS_Store
+package-lock.json
